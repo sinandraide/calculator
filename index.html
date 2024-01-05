@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <script src="dist/index.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="frame">
+        <div class="answer-container">
+          <div class="answer-box1" id="answer-box2"></div>
+          <div class="answer-box2" id="answer-box1"></div>
+        </div>
+
+        <div class="grid">
+          <button id="btn17" style="grid-column: span 2" onclick="allClear()">
+            AC
+          </button>
+          <button id="btn16" onclick="deleteCharacter()">DEL</button>
+          <button id="btn13" onclick="renderOperator(this)">&divide;</button>
+          <button id="btn7" onclick="register(this)">7</button>
+          <button id="btn8" onclick="register(this)">8</button>
+          <button id="btn9" onclick="register(this)">9</button>
+          <button id="btn10" onclick="renderOperator(this)">+</button>
+          <button id="btn4" onclick="register(this)">4</button>
+          <button id="btn5" onclick="register(this)">5</button>
+          <button id="btn6" onclick="register(this)">6</button>
+          <button id="btn11" onclick="renderOperator(this)">-</button>
+          <button id="btn1" onclick="register(this)">1</button>
+          <button id="btn2" onclick="register(this)">2</button>
+          <button id="btn3" onclick="register(this)">3</button>
+          <button id="btn12" onclick="renderOperator(this)">*</button>
+          <button id="btn0" onclick="register(this)">0</button>
+          <button id="btn15" onclick="renderDecimal(this)">.</button>
+          <button
+            id="btn14"
+            onclick="calculateResult()"
+            style="grid-column: span 2"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
